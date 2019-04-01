@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел](https://up.htmlacademy.ru/adaptive/16/user/942257).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей_Корякин](https://htmlacademy.ru/profile/alexeycorr).
 
 ---
 
