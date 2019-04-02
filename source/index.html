@@ -5,8 +5,115 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo--image" src="http://placehold.it/86x35" alt="Мишка">
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">Каталог товаров</li>
+          <li class="site-list__item">Вязание на заказ</li>
+          <li class="site-list__item">Поиск по сайту</li>
+          <li class="site-list__item">Корзина: пока пуста</li>
+        </ul>
+      </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Игрушки ручной работы для дома
+      </h1>
+      <section class="goods">
+        <h2 class="goods__title">
+          Милые штучки ручной работы для дома
+        </h2>
+        <ul class="goods__list">
+          <li class="goods__item">Предметы интерьера</li>
+          <li class="goods__item">Детские игрушки</li>
+        </ul>
+      </section>
+
+      <section class="product-of-week">
+        <div class="product-of-week__wrapper">
+          <h3 class="product-of-week__title">Вязанные корзинки</h3>
+          <b class="product-of-week__week-item">
+            Товар недели
+          </b>
+          <p class="product-of-week__description">
+            Экологически чистая пряжа, ручная работа.
+            Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="product-of-week__table">
+            <tr>
+              <td class="product-of-week__option">Цвет:</td>
+              <td class="product-of-week__option">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="product-of-week__option">Диаметр:</td>
+              <td class="product-of-week__option">5 см</td>
+            </tr>
+            <tr>
+              <td class="product-of-week__option">Высота:</td>
+              <td class="product-of-week__option">15 см</td>
+            </tr>
+          </table>
+          <img class="product-of-week__item-image" src="http://placehold.it/260x315" alt="Корзинки">
+          <p class="product-of-week__price">Цена: 990 руб.</p>
+          <button type="button" class="product-of-week__button button">Заказать</button>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <h3 class="about-us__title">
+          Коротко о нас:
+        </h3>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного производителя</li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk">
+              Вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb">
+              Фейсбук
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta">
+              Инстаграм
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link">
+          <img class="copyright__logo-image" src="http://placehold.it/27x34" alt="HTML Академия">
+        </a>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
