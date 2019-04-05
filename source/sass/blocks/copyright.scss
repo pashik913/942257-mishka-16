@@ -1,0 +1,16 @@
+.copyright {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    padding-left: 69px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  &__link {
+    padding-left: 30px;
+  }
+}

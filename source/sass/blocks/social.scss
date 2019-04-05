@@ -1,0 +1,29 @@
+.social {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 260px;
+    background-color: gainsboro;
+    left: 30px;
+  }
+
+  &__list {
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 87px;
+    align-items: center;
+  }
+
+  &__item {
+    padding-right: 41px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

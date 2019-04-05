@@ -1,0 +1,65 @@
+.product-of-week {
+  font-weight: normal;
+  color: #444444;
+  padding-left: 30px;
+  margin-bottom: 36px;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-bottom: 8px;
+  }
+
+  &__week-item {
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+    padding-left: -1px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 34px;
+  }
+
+  &__table {
+    min-width: 260px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #444444;
+    padding-bottom: 28px;
+
+    tr {
+      border-bottom: 1px solid #444444;
+    }
+  }
+
+  &__option {
+    padding: 0 31px 10px 0;
+  }
+
+  &__item-image {
+    padding-bottom: 29px;
+  }
+
+  &__price {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-left: 67px;
+    padding-bottom: 28px;
+  }
+
+  &__wrapper {
+    margin-bottom: 36px;
+  }
+}
