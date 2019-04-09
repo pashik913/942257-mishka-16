@@ -1,65 +1,77 @@
 .product-of-week {
-  font-weight: normal;
   color: #444444;
   padding-left: 30px;
   margin-bottom: 36px;
+  position: relative;
 
-  &__title {
-    padding: 0;
-    margin: 0;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
-    padding-left: 2px;
-    padding-bottom: 8px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    left: 0;
   }
+}
 
-  &__week-item {
-    font-size: 17px;
-    line-height: 20px;
-    color: #63d1bb;
-    padding-left: -1px;
-    padding-bottom: 30px;
-    text-transform: uppercase;
+.product-of-week__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-left: 2px;
+  padding-bottom: 8px;
+}
+
+.product-of-week__week-item {
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.product-of-week__description {
+  width: 250px;
+  font-size: 15px;
+  line-height: 24px;
+  padding-bottom: 34px;
+}
+
+.product-of-week__table {
+  min-width: 260px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  padding-bottom: 28px;
+
+  tr {
+    border-bottom: 1px solid #444444;
   }
+}
 
-  &__description {
-    font-size: 15px;
-    line-height: 24px;
-    padding-bottom: 34px;
-  }
+.product-of-week__option {
+  padding: 0 31px 10px 0;
+}
 
-  &__table {
-    min-width: 260px;
-    font-size: 15px;
-    line-height: 20px;
-    color: #444444;
-    padding-bottom: 28px;
+.product-of-week__item-image {
+  padding-bottom: 29px;
+}
 
-    tr {
-      border-bottom: 1px solid #444444;
-    }
-  }
+.product-of-week__price {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 48px;
+}
 
-  &__option {
-    padding: 0 31px 10px 0;
-  }
+.product-of-week__wrapper {
+  margin-bottom: 56px;
+}
 
-  &__item-image {
-    padding-bottom: 29px;
-  }
-
-  &__price {
-    padding: 0;
-    margin: 0;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    padding-left: 67px;
-    padding-bottom: 28px;
-  }
-
-  &__wrapper {
-    margin-bottom: 36px;
-  }
+.product-of-week__button {
+  padding: 18px 85px;
 }

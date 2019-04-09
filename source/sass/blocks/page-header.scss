@@ -1,5 +1,8 @@
-.page-header {
-  &__logo-image {
-    margin: 22px 118px 22px 116px;
-  }
+.page-header__logo {
+  display: block;
+  min-height: 79px;
+}
+
+.page-header__logo-image {
+  margin: 22px 118px 22px 116px;
 }

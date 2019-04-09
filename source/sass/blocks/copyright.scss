@@ -2,15 +2,15 @@
   min-height: 80px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
 
-  &__text {
-    padding-left: 69px;
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: bold;
-  }
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+}
 
-  &__link {
-    padding-left: 30px;
-  }
+.copyright__link {
+  padding-left: 30px;
 }
