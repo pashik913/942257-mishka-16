@@ -7,7 +7,6 @@
     height: 1px;
     width: 260px;
     background-color: gainsboro;
-    left: 30px;
   }
 }
 
@@ -15,17 +14,21 @@
   @include reset-list;
 
   min-height: 80px;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  padding: 0 57px;
 }
 
-.social__item {
-  padding-right: 41px;
+.social__link {
+  &:hover,
+  &:focus {
+    .social__icon path {
+      fill: #46c1ae;
+    }
+  }
 
-  &:last-child {
-    padding-right: 0;
+  &:active {
+    opacity: 0.3;
   }
 }

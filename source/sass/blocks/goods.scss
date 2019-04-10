@@ -41,7 +41,11 @@
 .goods__link {
   color: #ffffff;
   display: block;
-  padding: 30px 120px 30px 29px;
+  padding: 30px 115px 30px 29px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .goods__item--icon-interior {
@@ -53,6 +57,20 @@
     background-image: url("../img/icon-interior.svg");
     top: 23px;
     right: 36px;
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -63,7 +81,21 @@
     height: 60px;
     position: absolute;
     background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
     top: 21px;
     right: 27px;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }

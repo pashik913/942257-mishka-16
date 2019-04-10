@@ -1,8 +1,9 @@
-.page-header__logo {
-  display: block;
-  min-height: 79px;
+.page-header_wrapper {
+  text-align: center;
+  padding: 22px;
 }
 
-.page-header__logo-image {
-  margin: 22px 118px 22px 116px;
+.page-header__logo {
+  padding: 22px;
+  position: relative;
 }

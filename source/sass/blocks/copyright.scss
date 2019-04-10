@@ -1,8 +1,25 @@
 .copyright {
+  padding: 0 35px;
   min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.copyright__link {
+  position: relative;
+  display: block;
+  padding-top: 28px;
+  color: #000000;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    .copyright__logo-image {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -11,6 +28,9 @@
   font-weight: bold;
 }
 
-.copyright__link {
-  padding-left: 30px;
+.copyright__logo-image {
+  position: absolute;
+  right: 15px;
+  opacity: 0.8;
+  top: 22px;
 }
