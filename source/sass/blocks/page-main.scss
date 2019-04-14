@@ -1,0 +1,15 @@
+.page-main-catalog__wrapper {
+  background-color: #f1f1f1;
+  min-height: 177px;
+}
+
+.page-main-catalog__title {
+  @include reset-h;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+
+  text-align: center;
+  padding: 75px 10px;
+}

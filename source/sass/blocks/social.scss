@@ -1,0 +1,31 @@
+.social {
+  position: relative;
+
+  border-bottom: 1px solid gainsboro;
+}
+
+.social__list {
+  @include reset-list;
+
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 0 57px;
+}
+
+.social__item {
+  padding: 30px 20px;
+}
+
+.social__link {
+  &:hover,
+  &:focus {
+    .social__icon path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,35 @@
+.copyright {
+  padding: 0 35px;
+  min-height: 80px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    .copyright__logo-image {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.copyright__logo-image {
+  right: 15px;
+  opacity: 0.8;
+  top: 22px;
+}
