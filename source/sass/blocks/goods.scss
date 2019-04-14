@@ -3,10 +3,11 @@
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -125px 0;
+  background-position: center;
 }
 
 .goods__title {
+  position: relative;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
@@ -17,7 +18,6 @@
 }
 
 .goods__list {
-  width: 320px;
   padding: 0;
   margin: 0;
   font-size: 19px;

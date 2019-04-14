@@ -1,8 +1,10 @@
 .product-of-week {
   @include reset-p;
 
-  margin-bottom: 34px;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 34px;
 
   &::after {
     position: absolute;

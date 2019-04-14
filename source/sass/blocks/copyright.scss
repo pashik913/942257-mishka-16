@@ -4,11 +4,10 @@
 }
 
 .copyright__link {
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
   padding-top: 28px;
   color: #000000;
-  vertical-align: middle;
 
   &:hover,
   &:focus {
@@ -26,10 +25,10 @@
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
+  padding-right: 30px;
 }
 
 .copyright__logo-image {
-  position: absolute;
   right: 15px;
   opacity: 0.8;
   top: 22px;
