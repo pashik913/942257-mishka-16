@@ -1,8 +1,11 @@
 .about-us {
-  width: 320px;
+  margin-bottom: 61px;
+}
+
+.about-us__wrapper {
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 30px;
-  margin-bottom: 61px;
 }
 
 .about-us__title {
