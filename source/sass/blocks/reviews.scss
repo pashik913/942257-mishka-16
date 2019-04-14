@@ -1,25 +1,29 @@
 .reviews {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
   padding-bottom: 44px;
 
   &::after {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 100%;
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
     left: 0;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 
-    background-size: 100%;
+    background-size: 50%;
   }
 }
 
 .reviews__wrapper {
+  min-width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
   padding-bottom: 45px;
+
+  a {
+    margin: 0 auto;
+  }
 }
 
 .reviews__title {
@@ -46,8 +50,11 @@
 }
 
 .reviews__author {
+  @include reset-p;
+
   font-size: 17px;
   line-height: 30px;
+  text-align: center;
 }
 
 .reviews__author-name {
@@ -67,6 +74,7 @@
   padding-bottom: 38px;
 
   display: flex;
+  justify-content: center;
 }
 
 .slider-arrow {
@@ -75,4 +83,10 @@
   background: none;
   display: block;
   padding: 13px 42px 13px 38px;
+}
+
+.reviews__wrapper-bottom {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
