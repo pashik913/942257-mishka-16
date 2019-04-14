@@ -1,10 +1,9 @@
 @import "base/font.scss";
 @import "base/scaffolding.scss";
 @import "base/mixins.scss";
-@import "content.scss";
 @import "base/container.scss";
-@import "base/variables.scss";
-@import "blocks/visually-hidden.scss";
+@import "base/normalize.scss";
+@import "base/visually-hidden.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/about-us.scss";
 @import "blocks/goods.scss";
@@ -14,6 +13,9 @@
 @import "blocks/product-of-week.scss";
 @import "blocks/button.scss";
 @import "blocks/page-main.scss";
+@import "blocks/reviews.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/catalog.scss";
+@import "blocks/slider.scss";
+@import "blocks/contacts.scss";
