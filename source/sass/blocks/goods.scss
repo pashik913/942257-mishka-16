@@ -30,12 +30,12 @@
 .goods__item {
   position: relative;
   min-height: 103px;
-  background-color: #63d1bb;
+  background-color: $blue-color;
 }
 
 
 .goods__item--darker-color {
-  background-color: #56c3b2;
+  background-color: darken($blue-color, 5%);
 }
 
 .goods__link {
