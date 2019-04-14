@@ -6,8 +6,11 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
-  width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }
 
 .site-list__icon {
@@ -47,8 +50,4 @@
 .site-list__item {
   min-height: 79px;
   border-bottom: 1px solid #ececec;
-}
-
-.site-list__item--border-top {
-  border-top: 1px solid #ececec;
 }

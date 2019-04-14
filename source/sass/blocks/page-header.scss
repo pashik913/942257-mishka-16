@@ -5,6 +5,34 @@
   border-bottom: 1px solid #ececec;
 }
 
+.page-header__toggle--close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    top: 0;
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 2px;
+    background-color: #000000;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
 .page-header__toggle {
   position: absolute;
   top: 0;
