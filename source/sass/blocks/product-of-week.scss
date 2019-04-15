@@ -14,7 +14,7 @@
     left: 0;
     background-repeat: repeat-x;
 
-    background-size: 60%;
+    background-size: 50%;
   }
 }
 
@@ -87,4 +87,43 @@
 
 .product-of-week__button {
   padding: 18px 85px;
+}
+
+@media (min-width: $width-tablet) {
+  .product-of-week__mock-title {
+    display: flex;
+    // justify-content: space-around;
+    min-width: 640px;
+    padding-bottom: 55px;
+  }
+
+  .product-of-week__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .product-of-week__item {
+    font-size: 17px;
+    line-height: 17px;
+    padding: 0;
+  }
+
+  .product-of-week__wrapper {
+    display: inline;
+    margin: 0;
+  }
+
+  .product-of-week__mock-description {
+    height: 505px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  .product-of-week__item-image {
+    order: 1;
+    padding-left: 44px;
+  }
 }

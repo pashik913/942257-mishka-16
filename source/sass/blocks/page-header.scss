@@ -45,3 +45,14 @@
     }
   }
 }
+
+@media (min-width: $width-tablet) {
+  .page-header-mock {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__wrapper {
+    border: none;
+  }
+}

@@ -41,7 +41,7 @@
 .goods__link {
   color: #ffffff;
   display: block;
-  padding: 30px 115px 30px 29px;
+  padding: 30px 108px 30px 29px;
 
   &:active {
     opacity: 0.3;
@@ -97,5 +97,17 @@
     &::before {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .goods {
+    margin-bottom: 55px;
+  }
+
+  .goods__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }

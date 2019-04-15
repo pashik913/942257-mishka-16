@@ -90,3 +90,40 @@
   align-items: center;
   align-content: center;
 }
+
+@media (min-width: $width-tablet) {
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      margin: 0;
+    }
+  }
+
+  .reviews__wrapper-bot {
+    display: flex;
+  }
+
+  .reviews__button {
+    order: -1;
+    align-self: flex-start;
+  }
+
+  .reviews__title {
+    order: -1;
+    align-self: flex-start;
+  }
+
+  .reviews__text {
+    align-self: center;
+  }
+
+  .reviews__author {
+    align-self: flex-end;
+  }
+
+  .reviews__slider {
+    align-self: flex-end;
+  }
+}

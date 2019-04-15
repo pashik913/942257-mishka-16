@@ -108,3 +108,27 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .about-us__wrapper {
+    // height: 470px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-flow: column wrap;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__title {
+    padding-bottom: 47px;
+  }
+
+  .about-us__item {
+    width: 300px;
+  }
+}
