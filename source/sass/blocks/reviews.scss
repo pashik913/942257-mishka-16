@@ -95,14 +95,12 @@
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     a {
       margin: 0;
+      width: 175px;
     }
-  }
-
-  .reviews__wrapper-bot {
-    display: flex;
   }
 
   .reviews__button {
@@ -113,17 +111,43 @@
   .reviews__title {
     order: -1;
     align-self: flex-start;
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 65px;
   }
 
   .reviews__text {
     align-self: center;
+    padding: 0;
+  }
+
+  .reviews__item {
+    padding: 0;
+    width: 642px;
+    padding-bottom: 68px;
   }
 
   .reviews__author {
     align-self: flex-end;
+    display: block;
+    width: 255px;
+    text-align: left;
+    padding-bottom: 68px;
+  }
+
+  .reviews {
+    position: relative;
+    padding: 0;
+    margin-bottom: 72px;
   }
 
   .reviews__slider {
-    align-self: flex-end;
+    position: absolute;
+    left: 478px;
+    top: 310px;
+
+    button {
+      border: transparent;
+    }
   }
 }

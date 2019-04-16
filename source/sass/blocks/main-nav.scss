@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  display: flex;
 }
 
 .main-nav__toggle {
@@ -32,21 +33,6 @@
   }
 }
 
-@media (min-width: $width-tablet) {
-  .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main-nav__mock-top {
-    display: flex;
-    order: 0;
-    min-width: 340px;
-  }
-
-  .main-nav__mock-bot {
-    display: flex;
-    order: 1;
-    min-width: 310px;
-  }
-}
+// @media (min-width: $width-tablet) {
+//
+// }

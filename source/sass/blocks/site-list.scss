@@ -37,11 +37,11 @@
 }
 
 .site-list__icon--search {
-  left: 25px;
+  left: 15%;
 }
 
 .site-list__icon--cart {
-  left: 25px;
+  left: 15%;
 }
 
 .site-list__item {
@@ -52,15 +52,63 @@
 .site-list__item-delivery {
   font-size: 15px;
   line-height: 24px;
+  display: none;
 }
+
+.site-list--bot-menu {
+  order: 2;
+}
+
 
 @media (min-width: $width-tablet) {
   .site-list {
     display: flex;
-    flex-wrap: wrap;
+    margin: 0;
   }
 
   .site-list__item {
     border: none;
+  }
+
+  .site-list--top-menu {
+    order: -1;
+    min-width: 350px;
+
+    .site-list__item {
+      border-left: 1px solid gainsboro;
+    }
+
+    .site-list__link {
+      padding: 35px 0 35px 83px;
+    }
+
+    span {
+      display: none;
+    }
+
+    // padding-top: -105px;
+  }
+
+  .site-list__item-delivery {
+    display: block;
+    order: 2;
+  }
+
+  .site-list--bot-menu {
+    padding-right: 95px;
+
+    .site-list__item {
+      font-size: 15px;
+      line-height: 24px;
+      padding-right: 37px;
+    }
+
+    .site-list__link {
+      padding: 25px 0;
+    }
+  }
+
+  .site-list__icon--search {
+    left: 31px;
   }
 }
