@@ -64,9 +64,20 @@
     display: none;
   }
 
-  .page-header__wrapper-bot {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid gainsboro;
+  // .page-header__wrapper-bot {
+  //   display: flex;
+  //   align-items: center;
+  //   // border-top: 1px solid gainsboro;
+  // }
+}
+
+@media (min-width: $width-desktop) {
+  .page-header__wrapper {
+    order: 0;
+    padding-right: 100px;
+  }
+
+  .page-header__mock {
+    justify-content: space-between;
   }
 }

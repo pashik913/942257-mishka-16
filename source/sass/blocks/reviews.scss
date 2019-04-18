@@ -102,6 +102,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
 
     a {
       margin: 0;
@@ -149,11 +150,21 @@
 
   .reviews__slider {
     position: absolute;
-    left: 478px;
+    right: 19px;
     top: 310px;
 
     button {
       border: transparent;
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .reviews__wrapper {
+    padding-left: 175px;
+  }
+
+  .reviews__slider {
+    // right: 69px;
   }
 }

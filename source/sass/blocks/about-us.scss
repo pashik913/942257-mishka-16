@@ -170,3 +170,9 @@
     margin-right: 34px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .about-us__wrapper {
+    padding-left: 175px;
+  }
+}
