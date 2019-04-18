@@ -6,6 +6,7 @@
 .copyright__link {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 28px;
   color: #000000;
 
@@ -32,4 +33,10 @@
   right: 15px;
   opacity: 0.8;
   top: 22px;
+}
+
+@media (min-width: $width-tablet) {
+  .copyright {
+    padding: 0;
+  }
 }

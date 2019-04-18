@@ -37,7 +37,7 @@
 
 .reviews__item {
   margin: 0;
-  padding-bottom: 36px;
+  padding-bottom: 40px;
 }
 
 .reviews__text {
@@ -46,7 +46,6 @@
   font-size: 15px;
   line-height: 30px;
   color: $grey-color;
-  padding-bottom: 40px;
 }
 
 .reviews__author {
@@ -54,7 +53,14 @@
 
   font-size: 17px;
   line-height: 30px;
-  text-align: center;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contacts__text--first-colum {
+  padding-right: 32px;
 }
 
 .reviews__author-name {
