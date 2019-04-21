@@ -108,3 +108,71 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .about-us__wrapper {
+    padding: 0;
+  }
+
+  .about-us__list {
+    font-size: 20px;
+    line-height: 22px;
+    width: 300px;
+  }
+
+  .about-us__title {
+    padding-bottom: 47px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__item {
+    margin-bottom: 60px;
+
+    span {
+      display: block;
+    }
+  }
+
+  .about-us {
+    margin-bottom: 82px;
+  }
+
+  .about-us__mock {
+    display: flex;
+  }
+
+  .about-us__item--feature-flower {
+    span {
+      padding-right: 70px;
+    }
+  }
+
+  .about-us__item--feature-money {
+    span {
+      padding-right: 50px;
+    }
+  }
+
+  .about-us__item--feature-heart {
+    span {
+      padding-right: 80px;
+    }
+  }
+
+  .about-us__item--feature-gift {
+    span {
+      padding-right: 50px;
+    }
+  }
+
+  .about-us__list--left {
+    margin-right: 34px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .about-us__wrapper {
+    padding-left: 175px;
+  }
+}

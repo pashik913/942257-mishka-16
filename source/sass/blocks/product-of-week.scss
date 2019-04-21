@@ -14,7 +14,7 @@
     left: 0;
     background-repeat: repeat-x;
 
-    background-size: 60%;
+    background-size: 50%;
   }
 }
 
@@ -83,8 +83,112 @@
   font-weight: bold;
   text-align: center;
   padding-bottom: 28px;
+  color: #444444;
 }
 
 .product-of-week__button {
   padding: 18px 85px;
+}
+
+@media (min-width: $width-tablet) {
+  .product-of-week__mock-title {
+    display: flex;
+    justify-content: space-between;
+    min-width: 640px;
+    padding-bottom: 55px;
+    align-items: center;
+  }
+
+  .product-of-week__title {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .product-of-week__week-item {
+    text-align: center;
+    display: block;
+    width: 75px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 0;
+  }
+
+  .product-of-week__wrapper {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 53px;
+
+    a {
+      width: 292px;
+    }
+  }
+
+  .product-of-week__mock-description {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .product-of-week__description {
+    font-size: 17px;
+    line-height: 30px;
+    width: 282px;
+    color: #444444;
+  }
+
+  .product-of-week__item-image {
+    display: block;
+    position: absolute;
+    left: 377px;
+  }
+
+  .product-of-week__table {
+    margin-bottom: 59px;
+  }
+
+  .product-of-week__price {
+    padding-bottom: 34px;
+    font-size: 20px;
+  }
+
+  .product-of-week {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .product-of-week__wrapper {
+    width: 1050px;
+  }
+
+  .product-of-week__week-item {
+    order: -1;
+  }
+
+  .product-of-week__mock-title {
+    padding-left: 47px;
+    justify-content: flex-start;
+  }
+
+  .product-of-week__mock-description {
+    padding-left: 185px;
+    // width: 292px;
+  }
+
+  .product-of-week__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 58px;
+  }
+
+  .product-of-week__table {
+    width: 282px;
+  }
+
+  .product-of-week__price {
+    width: 292px;
+  }
 }
