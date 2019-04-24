@@ -103,6 +103,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    padding-top: 86px;
 
     a {
       margin: 0;
@@ -146,12 +147,15 @@
     position: relative;
     padding: 0;
     margin-bottom: 72px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .reviews__slider {
     position: absolute;
     right: 19px;
-    top: 310px;
+    top: 400px;
 
     button {
       border: transparent;
@@ -160,8 +164,14 @@
 }
 
 @media (min-width: $width-desktop) {
+  .reviews {
+    background-image: none;
+  }
+
   .reviews__wrapper {
     padding-left: 175px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .reviews__slider {

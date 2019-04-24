@@ -3,6 +3,11 @@
   min-height: 177px;
 }
 
+.page-main {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ececec;
+}
+
 .page-main-catalog__title {
   @include reset-h;
 
@@ -12,4 +17,40 @@
 
   text-align: center;
   padding: 75px 10px;
+}
+
+@media (min-width: $width-tablet) {
+  .page-main {
+    margin-top: -76px;
+  }
+
+  .page-main-catalog {
+    border-top: 1px solid #ececec;
+    margin-top: -76px;
+  }
+
+  .page-main-catalog__title {
+    padding-top: 105px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-main-catalog__wrapper {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 90%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page-main-catalog__title {
+    font-size: 54px;
+    line-height: 57px;
+    padding-bottom: 99px;
+  }
+
+  .page-main-catalog__wrapper {
+    background-size: 100%;
+  }
 }

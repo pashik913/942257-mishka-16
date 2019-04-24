@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
+  margin-bottom: 30px;
 }
 
 .catalog__list {
@@ -91,7 +92,7 @@
     position: absolute;
     content: "";
     height: 1px;
-    width: 204px;
+    width: 80%;
     background-color: gainsboro;
     bottom: 73px;
     left: 28px;
@@ -106,10 +107,81 @@
   padding: 0 28px;
 }
 
+.catalog-production {
+  width: 320px;
+  padding: 0 30px;
+  padding-bottom: 19px;
+}
+
+.catalog-production__wrapper {
+  border: 1px solid #ececec;
+}
+
+.catalog-production__title {
+  @include reset-h;
+
+  position: relative;
+
+  font-size: 17px;
+  line-height: 24px;
+  padding: 29px 10px 26px 91px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 27px;
+    top: 33px;
+    left: 33px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog-production__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey-color;
+  padding: 34px;
+  padding-bottom: 29px;
+}
+
+.catalog-production__wrapper-button {
+  padding: 0 34px;
+  padding-bottom: 33px;
+}
+
+.catalog-production__button {
+  width: 192px;
+}
+
+.catalog-production__video-link {
+  display: block;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 101px;
+    height: 77px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: $width-tablet) {
+  .catalog__modal-link {
+    padding-right: 10px;
+  }
+
   .catalog {
     padding: 0;
     width: 668px;
+    padding-bottom: 53px;
   }
 
   .page-main-catalog__wrapper {
@@ -127,6 +199,12 @@
     }
   }
 
+  .catalog__item--last {
+    p {
+      padding-bottom: 145px;
+    }
+  }
+
   .catalog__item-title {
     font-size: 20px;
     line-height: 24px;
@@ -137,7 +215,7 @@
   .catalog__item-text {
     font-size: 15px;
     line-height: 30px;
-    padding-bottom: 205px;
+    padding-bottom: 169px;
   }
 
   .catalog__item-price {
@@ -147,16 +225,21 @@
   .catalog__wrapper-border {
     border: 1px solid #ececec;
     width: 335px;
+  }
 
-    ::before {
-      position: absolute;
-      content: "";
-      height: 1px;
-      width: 270px;
-      background-color: gainsboro;
-      bottom: 73px;
-      left: 28px;
-    }
+  .catalog-production__wrapper {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-production__video-link {
+    order: -1;
+  }
+
+  .catalog-production {
+    width: 668px;
+    padding: 0;
   }
 }
 
@@ -173,6 +256,10 @@
     flex-direction: column;
     margin-top: 0;
     margin-right: 50px;
+
+    a {
+      margin: 0;
+    }
   }
 
   .catalog__item-text {
@@ -188,7 +275,7 @@
   }
 
   .catalog__wrapper-border {
-    width: 319px;
+    width: 316px;
   }
 
   .catalog__item-title {

@@ -2,7 +2,7 @@
   position: relative;
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
 }
 
 .page-header__toggle {
@@ -47,6 +47,11 @@
 }
 
 @media (min-width: $width-tablet) {
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
   .page-header__mock {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +61,7 @@
 
   .page-header__wrapper {
     order: -1;
-    padding-right: 230px;
+    padding-right: 205px;
     border: none;
   }
 
@@ -66,8 +71,14 @@
 }
 
 @media (min-width: $width-desktop) {
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
   .page-header__wrapper {
     order: 0;
+    padding: 0;
     padding-right: 100px;
   }
 

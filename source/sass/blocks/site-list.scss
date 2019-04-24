@@ -1,7 +1,7 @@
 .site-list {
   @include reset-list;
 
-  // display: none;
+  display: none;
   position: relative;
   font-size: 17px;
   line-height: 24px;
@@ -96,10 +96,12 @@
   .site-list__item-delivery {
     display: block;
     order: 2;
+    z-index: 2;
   }
 
   .site-list--bot-menu {
     padding-right: 95px;
+    z-index: 2;
 
     .site-list__item {
       font-size: 15px;
@@ -118,6 +120,7 @@
 
   .site-list--desktop-menu {
     display: none;
+    z-index: 2;
   }
 }
 
@@ -136,12 +139,13 @@
     }
   }
 
-  .site-list--top-menu {
-    order: 0;
-  }
-
   .site-list {
     font-size: 15px;
+  }
+
+  .site-list--top-menu {
+    order: 0;
+    font-size: 17px;
   }
 
   .site-list__link {
