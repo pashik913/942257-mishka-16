@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  padding-bottom: 44px;
+  padding-bottom: 41px;
 
   &::after {
     position: absolute;
@@ -32,12 +32,12 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  padding-bottom: 38px;
+  padding-bottom: 24px;
 }
 
 .reviews__item {
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
 }
 
 .reviews__text {
@@ -53,7 +53,7 @@
 
   font-size: 17px;
   line-height: 30px;
-  padding-bottom: 36px;
+  padding-bottom: 29px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -77,7 +77,7 @@
 
   margin: 0;
   padding: 0;
-  padding-bottom: 38px;
+  padding-bottom: 34px;
 
   display: flex;
   justify-content: center;

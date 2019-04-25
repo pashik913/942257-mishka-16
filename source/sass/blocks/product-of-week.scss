@@ -3,7 +3,7 @@
 
   position: relative;
 
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   &::after {
     position: absolute;
@@ -29,8 +29,7 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  padding-left: 2px;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .product-of-week__week-item {
@@ -38,7 +37,7 @@
   font-size: 17px;
   line-height: 20px;
   color: $blue-color;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
   text-transform: uppercase;
 }
 
@@ -48,7 +47,7 @@
   width: 250px;
   font-size: 15px;
   line-height: 24px;
-  padding-bottom: 34px;
+  padding-bottom: 18px;
 }
 
 .product-of-week__table {
@@ -59,6 +58,10 @@
   margin-bottom: 28px;
 
   border-collapse: collapse;
+
+  td {
+    padding-right: 21px;
+  }
 
   tr {
     border-bottom: 1px solid #e7e7e7;
@@ -71,7 +74,7 @@
 
 .product-of-week__item-image {
   display: block;
-  padding-bottom: 29px;
+  padding-bottom: 25px;
 }
 
 .product-of-week__price {

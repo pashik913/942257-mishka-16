@@ -1,7 +1,7 @@
 .page-header__wrapper {
   position: relative;
   text-align: center;
-  padding: 20px 0;
+  padding: 23px 0;
   // border-bottom: 1px solid #ececec;
 }
 
@@ -45,6 +45,48 @@
     }
   }
 }
+
+.page-header__toggle--opened {
+  span {
+    background-color: transparent;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+
+    &::after,
+    &::before {
+      top: 0;
+      position: absolute;
+      content: "";
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+// @media (min-width: $mobile-width-only) {
+//   .page-header__toggle {
+//     &--active {
+//       .site-list {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+
 
 @media (min-width: $width-tablet) {
   .page-header__logo-image {
