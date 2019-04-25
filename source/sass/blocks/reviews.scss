@@ -11,7 +11,7 @@
     left: 0;
     background-repeat: repeat-x;
 
-    background-size: 50%;
+    background-size: contain;
   }
 }
 
@@ -98,7 +98,12 @@
 }
 
 @media (min-width: $width-tablet) {
+  .slider-arrow {
+    padding: 18px;
+  }
+
   .reviews__wrapper {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -144,7 +149,7 @@
   }
 
   .reviews {
-    position: relative;
+    // position: relative;
     padding: 0;
     margin-bottom: 72px;
 
@@ -154,8 +159,9 @@
 
   .reviews__slider {
     position: absolute;
-    right: 19px;
+    right: 0;
     top: 400px;
+    padding: 0;
 
     button {
       border: transparent;
