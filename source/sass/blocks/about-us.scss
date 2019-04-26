@@ -127,15 +127,20 @@
   }
 
   .about-us__item {
+    padding-top: 53px;
     margin-bottom: 60px;
 
     span {
       display: block;
     }
+
+    &::before {
+      top: 0;
+    }
   }
 
   .about-us {
-    margin-bottom: 82px;
+    margin-bottom: 13px;
   }
 
   .about-us__mock {
@@ -174,5 +179,14 @@
 @media (min-width: $width-desktop) {
   .about-us__wrapper {
     padding-left: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list--left {
+    margin-right: 51px;
   }
 }

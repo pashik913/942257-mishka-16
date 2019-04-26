@@ -103,8 +103,9 @@
 @media (min-width: $width-tablet) {
   .goods {
     position: relative;
-    margin-bottom: 43px;
+    margin-bottom: 48px;
     background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center 0;
 
     background-color: #f8f8f8;
 
@@ -121,10 +122,11 @@
     }
   }
 
-  // .goods__wrapper {
-  //   width: 668px;
-  //   margin: 0 auto;
-  // }
+  .goods__link--interrior {
+    &::before {
+      top: 28px;
+    }
+  }
 
   .goods__list {
     display: flex;
@@ -141,8 +143,8 @@
   .goods__title {
     font-size: 43px;
     line-height: 50px;
-    padding: 176px 130px 0;
-    margin-bottom: 371px;
+    padding: 153px 65px 0;
+    margin-bottom: 374px;
   }
 
   .goods__link {
@@ -152,15 +154,15 @@
 
 @media (min-width: $width-desktop) {
   .goods {
-    margin-bottom: 117px;
+    margin-bottom: 126px;
     background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   .goods__title {
     font-size: 53px;
     line-height: 57px;
-    padding: 197px 180px 0;
-    margin-bottom: 354px;
+    padding: 153px 180px 0;
+    margin-bottom: 360px;
   }
 
   .goods__link {
