@@ -81,6 +81,13 @@
   }
 }
 
+.page-header__mock {
+  border-bottom: 1px solid #ececec;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
 @media (min-width: $width-tablet) {
   .page-header__logo-image {
     width: 112px;
@@ -88,10 +95,11 @@
   }
 
   .page-header__mock {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     height: 170px;
-    // align-items: center;
+    border: none;
   }
 
   .page-header__wrapper {
@@ -115,9 +123,9 @@
 
   .page-header__wrapper {
     order: 0;
-    padding: 0;
     margin: 0;
-    // padding-right: 100px;
+    padding-top: 9px;
+    padding-right: 18px;
   }
 
   .page-header__mock {
