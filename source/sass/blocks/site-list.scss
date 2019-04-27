@@ -23,7 +23,9 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    span {
+      opacity: 0.6;
+    }
 
     .site-list__icon {
       opacity: 1;
@@ -117,7 +119,7 @@
       padding-top: 55px;
     }
 
-    span {
+    .site-list__item-hidden {
       display: none;
     }
   }

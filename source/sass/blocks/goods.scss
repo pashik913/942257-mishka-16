@@ -115,11 +115,12 @@
       content: "";
       width: 100%;
       height: 24px;
-      background-image: url("../img/bg-zigzag-line.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
       left: 0;
+      bottom: 0;
       background-repeat: repeat-x;
       background-size: contain;
-      // background-position: bottom;
+      background-position: bottom;
     }
   }
 
@@ -139,6 +140,12 @@
 
   .goods__item {
     width: 50%;
+    min-height: 119px;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+    }
   }
 
   .goods__title {
@@ -150,6 +157,7 @@
 
   .goods__link {
     padding-left: 36px;
+    padding-right: 115px;
   }
 }
 
