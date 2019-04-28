@@ -59,6 +59,10 @@
     margin: 0;
   }
 
+  .contacts__wrapper {
+    padding-top: 20px;
+  }
+
   .contacts__button {
     width: 226px;
   }
@@ -90,7 +94,7 @@
 
   .contacts__text {
     span {
-      padding-right: 26px;
+      padding-right: 24px;
     }
   }
 
@@ -110,8 +114,12 @@
 }
 
 @media (min-width: $width-desktop) {
+  .contacts {
+    margin-top: 50px;
+  }
+
   .contacts__info-wrapper {
-    padding-left: 175px;
+    padding-left: 170px;
     padding-bottom: 79px;
   }
 
@@ -120,8 +128,8 @@
     line-height: 57px;
 
     &::before {
-      left: -111px;
-      top: -15px;
+      left: -107px;
+      top: -8px;
     }
   }
 
@@ -142,7 +150,7 @@
   .contacts__map-wrapper {
     padding: 0;
     position: absolute;
-    top: -70px;
+    top: -50px;
     right: 0;
   }
 

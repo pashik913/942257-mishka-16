@@ -39,11 +39,11 @@
 }
 
 .site-list__icon--search {
-  left: 10%;
+  left: 25px;
 }
 
 .site-list__icon--cart {
-  left: 10%;
+  left: 25px;
 }
 
 .site-list__item {
@@ -197,6 +197,11 @@
   .site-list--top-menu {
     order: 0;
     font-size: 17px;
+    padding-top: 2px;
+
+    .site-list__link {
+      padding: 31px 0 31px 83px;
+    }
   }
 
   .site-list--bot-menu .site-list__link {

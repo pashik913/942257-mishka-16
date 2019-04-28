@@ -108,7 +108,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    padding-top: 86px;
+    padding-top: 77px;
 
     a {
       margin: 0;
@@ -145,22 +145,25 @@
     display: block;
     width: 255px;
     text-align: left;
-    padding-bottom: 68px;
+    padding-bottom: 114px;
   }
 
   .reviews {
-    // position: relative;
     padding: 0;
-    margin-bottom: 123px;
+    margin-bottom: 57px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    &::after {
+      height: 15px;
+    }
   }
 
   .reviews__slider {
     position: absolute;
     right: 0;
-    top: 360px;
+    top: 350px;
     padding: 0;
 
     button {
@@ -182,7 +185,7 @@
   }
 
   .reviews__slider {
-    top: 318px;
+    top: 309px;
   }
 
   .reviews__title {
@@ -192,5 +195,18 @@
 
   .reviews__item {
     padding-bottom: 8px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .reviews {
+    padding-bottom: 141px;
+    margin: 0;
+  }
+
+  .reviews__wrapper {
+    a {
+      margin-top: 9px;
+    }
   }
 }

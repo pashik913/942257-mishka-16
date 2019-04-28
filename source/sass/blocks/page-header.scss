@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   padding: 23px 0;
+  padding-bottom: 17px;
 }
 
 .page-header__toggle {
@@ -43,16 +44,6 @@
     &::before {
       top: 6px;
     }
-  }
-}
-
-.page-header--nojs {
-  .page-header__toggle {
-    display: none;
-  }
-
-  .site-list {
-    display: block;
   }
 }
 
@@ -99,6 +90,16 @@
   }
 }
 
+.page-header--nojs {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .site-list {
+    display: block;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .page-header__logo-image {
     width: 112px;
@@ -136,7 +137,7 @@
     order: 0;
     margin: 0;
     padding-top: 9px;
-    padding-right: 18px;
+    padding-right: 25px;
   }
 
   .page-header__mock {
