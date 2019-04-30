@@ -1,0 +1,22 @@
+.filter-type {
+  margin-bottom: 34px;
+}
+
+.filter-type__radio-list {
+  margin-top: 25px;
+
+  :first-child {
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .filter-type {
+    margin-bottom: 50px;
+  }
+
+  .filter-type__radio-list {
+    padding-left: 150px;
+    margin-top: -17px;
+  }
+}

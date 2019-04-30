@@ -1,0 +1,47 @@
+.personal-contacts {
+  margin-bottom: 34px;
+
+  input {
+    color: rgba(68, 68, 68, 0.3);
+    font-size: 17px;
+    line-height: 18px;
+    min-height: 52px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.personal-contacts__tel-list {
+  margin-bottom: 34px;
+}
+
+@media (min-width: $width-tablet) {
+  .personal-contacts {
+    background-color: #f1f1f1;
+    padding: 70px 0;
+    margin-bottom: 50px;
+
+    input {
+      background-color: transparent;
+    }
+  }
+
+  .personal-contacts__tel-list,
+  .personal-contacts__email-list {
+    padding-left: 150px;
+    margin: 0;
+    margin-top: -35px;
+  }
+
+  .personal-contacts__tel-list {
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .personal-contacts__wrapper {
+    padding-right: 150px;
+  }
+}

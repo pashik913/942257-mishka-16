@@ -6,8 +6,6 @@
 .page-main {
   // background-color: #f8f8f8;
   border-top: 1px solid #ececec;
-  position: relative;
-  top: 79px;
 }
 
 .page-main-catalog__title {
@@ -21,19 +19,14 @@
   padding: 71px 10px 75px 10px;
 }
 
-.page-main-catalog {
-  position: relative;
-  top: 79px;
-}
-
 @media (min-width: $width-tablet) {
   .page-main {
-    margin-top: -159px;
+    margin-top: -80px;
   }
 
   .page-main-catalog {
     border-top: 1px solid #ececec;
-    margin-top: -159px;
+    margin-top: -80px;
     margin-bottom: 78px;
   }
 
