@@ -37,11 +37,56 @@
 
   .personal-contacts__tel-list {
     padding-bottom: 45px;
+
+    label {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 24px;
+        top: 0;
+        right: 25px;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  .personal-contacts__email-list {
+    padding-bottom: 45px;
+
+    label {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 26px;
+        top: 0;
+        right: 25px;
+        background-image: url("../img/icon-mail.svg");
+        background-repeat: no-repeat;
+        opacity: 0.2;
+      }
+    }
   }
 }
 
 @media (min-width: $width-desktop) {
   .personal-contacts__wrapper {
     padding-right: 150px;
+  }
+
+  .personal-contacts__tel-list,
+  .personal-contacts__email-list {
+    label {
+      &::after {
+        right: 0;
+      }
+    }
   }
 }
