@@ -1,9 +1,10 @@
 .modal__wrapper {
   width: 320px;
-  min-height: 354px;
+  height: 354px;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.8);
+  padding: 37px 30px;
 }
 
 .modal__title {
@@ -13,20 +14,23 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  padding: 38px 40px 27px;
+  padding-bottom: 10px;
 }
 
 .modal {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -160px;
+
   z-index: 2;
 
   fieldset {
     border: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
   }
 
   legend {
@@ -40,6 +44,24 @@
   }
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal__list {
   @include reset-list;
 
@@ -48,22 +70,43 @@
 
   padding-bottom: 30px;
   margin-top: 23px;
-
-  :last-child {
-    padding-right: 0;
-  }
 }
 
 .modal__button {
   background-color: $blue-color;
-  width: 80%;
+  width: 100%;
   border-color: $blue-color;
   margin: 0 auto;
   color: #ffffff;
 }
 
+.modal__radio {
+  text-align: center;
+  padding-top: 12px;
+}
+
 .modal__wrapper-button {
   padding-top: 50px;
+}
+
+.modal__item {
+  margin-right: 90px;
+}
+
+.modal__label input[type="radio"] + .modal__radio {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  border: 2px solid #f1f1f1;
+  cursor: pointer;
+}
+
+.modal__label input[type="radio"]:checked + .modal__radio {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  border: 2px solid $blue-color;
+  cursor: pointer;
 }
 
 .modal--show {
@@ -71,26 +114,18 @@
   animation: bounce 0.6s;
 }
 
-.modal__item {
-  padding-right: 75px;
-}
+@media (min-width: $width-tablet) {
+  .modal__wrapper {
+    width: 584px;
+    height: 354px;
+    padding: 50px 30px;
+  }
 
-.modal__label input[type="radio"] + .modal__radio {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 50px;
-  border: 2px solid #f1f1f1;
-  top: -15px;
-  left: -36px;
-}
+  .modal {
+    margin-left: -292px;
+  }
 
-.modal__label input[type="radio"]:checked + .modal__radio {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 50px;
-  border: 2px solid $blue-color;
-  top: -15px;
-  left: -36px;
+  .modal__wrapper-button {
+    padding-top: 59px;
+  }
 }
