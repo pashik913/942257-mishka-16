@@ -88,7 +88,7 @@
 }
 
 .product-of-week__button {
-  padding: 18px 85px;
+  // padding: 18px 85px;
   margin: 0 auto;
   width: 100%;
 }
@@ -184,12 +184,17 @@
 
 @media (min-width: $width-desktop) {
   .product-of-week {
-    margin-bottom: 103px;
+    margin-bottom: 83px;
     padding-top: 55px;
+
+    &::after {
+      height: 23px;
+    }
   }
 
   .product-of-week__wrapper {
     width: 1050px;
+    padding-bottom: 73px;
   }
 
   .product-of-week__item-image {

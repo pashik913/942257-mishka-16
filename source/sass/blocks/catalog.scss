@@ -175,13 +175,13 @@
 
 @media (min-width: $width-tablet) {
   .catalog__modal-link {
-    padding-right: 10px;
+    padding-right: 4px;
   }
 
   .catalog {
     padding: 0;
     width: 668px;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .catalog__item {
@@ -197,7 +197,7 @@
 
   .catalog__item--last {
     p {
-      padding-bottom: 145px;
+      padding-bottom: 149px;
     }
   }
 
@@ -211,7 +211,7 @@
   .catalog__item-text {
     font-size: 15px;
     line-height: 30px;
-    padding-bottom: 169px;
+    padding-bottom: 175px;
   }
 
   .catalog__item-price {
@@ -221,10 +221,18 @@
   .catalog__wrapper-border {
     border: 1px solid #ececec;
     width: 335px;
+
+    &::before {
+      bottom: 69px;
+    }
+  }
+
+  .catalog-production {
+    width: 668px;
+    padding: 0;
   }
 
   .catalog-production__wrapper {
-    width: 668px;
     display: flex;
     flex-direction: column;
   }
@@ -233,15 +241,10 @@
     order: -1;
   }
 
-  .catalog-production {
-    width: 668px;
-    padding: 0;
-  }
-
   .catalog-production__title {
     font-size: 20px;
     line-height: 24px;
-    padding: 33px 10px 11px 106px;
+    padding: 35px 10px 11px 106px;
 
     &::before {
       left: 41px;
@@ -259,13 +262,18 @@
   }
 
   .catalog-production__wrapper-button {
-    padding: 0 41px 33px 41px;
+    padding: 0 41px 45px 41px;
+  }
+
+  .catalog__wrapper-price {
+    min-height: 71px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .catalog {
     width: 1050px;
+    margin-bottom: 58px;
   }
 
   .catalog__list {
@@ -283,22 +291,62 @@
   }
 
   .catalog__item-text {
-    padding-bottom: 45px;
+    padding-bottom: 37px;
   }
 
   .catalog__item--last {
     margin-right: 0;
 
     p {
-      padding-bottom: 20px;
+      padding-bottom: 13px;
     }
+  }
+
+  .catalog__item-title {
+    padding-right: 50px;
+  }
+
+  .catalog-production {
+    width: 1050px;
+  }
+
+  .catalog-production__wrapper {
+    position: relative;
+  }
+
+  .catalog-production__video-link {
+    position: absolute;
+  }
+
+  .catalog-production__title,
+  .catalog-production__text {
+    padding-left: 758px;
+  }
+
+  .catalog-production__button {
+    min-width: 230px;
+  }
+
+  .catalog-production__text {
+    padding-bottom: 47px;
   }
 
   .catalog__wrapper-border {
     width: 316px;
   }
 
-  .catalog__item-title {
-    padding-right: 50px;
+  .catalog-production__title {
+    padding-top: 95px;
+    padding-right: 60px;
+
+    &::before {
+      left: 761px;
+      top: 41px;
+    }
+  }
+
+  .catalog-production__wrapper-button {
+    padding-bottom: 60px;
+    padding-left: 761px;
   }
 }

@@ -29,6 +29,7 @@
 .about-us__item {
   position: relative;
   padding-top: 84px;
+  // padding-right: 60px;
 }
 
 .about-us__item--feature-flower {
@@ -42,6 +43,8 @@
     background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
   }
+
+  padding-right: 65px;
 }
 
 .about-us__item--feature-money {
@@ -55,6 +58,8 @@
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
   }
+
+  padding-right: 40px;
 }
 
 .about-us__item--feature-heart {
@@ -68,6 +73,8 @@
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
   }
+
+  padding-right: 60px;
 }
 
 .about-us__item--feature-ball {
@@ -81,6 +88,8 @@
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
   }
+
+  padding-right: 5px;
 }
 
 .about-us__item--feature-rocket {
@@ -107,6 +116,8 @@
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
   }
+
+  padding-right: 10px;
 }
 
 @media (min-width: $width-tablet) {
@@ -129,6 +140,7 @@
   .about-us__item {
     padding-top: 53px;
     margin-bottom: 60px;
+    padding-right: 0;
 
     span {
       display: block;
@@ -177,6 +189,10 @@
 }
 
 @media (min-width: $width-desktop) {
+  .about-us {
+    margin-bottom: 29px;
+  }
+
   .about-us__wrapper {
     padding-left: 175px;
   }
