@@ -1,6 +1,6 @@
 .goods {
   margin-bottom: 27px;
-  // margin-top: 90px;
+  background-color: #f8f8f8;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -108,8 +108,6 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 0;
 
-    background-color: #f8f8f8;
-
     &::after {
       position: absolute;
       content: "";
@@ -117,7 +115,7 @@
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       left: 0;
-      bottom: 0;
+      bottom: -1px;
       background-repeat: repeat-x;
       background-size: contain;
       background-position: bottom;

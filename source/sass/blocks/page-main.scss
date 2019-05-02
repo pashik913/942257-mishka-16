@@ -1,6 +1,7 @@
 .page-main-catalog__wrapper {
   background-color: #f1f1f1;
   min-height: 177px;
+  margin-bottom: 32px;
 }
 
 .page-main-catalog__title {
@@ -34,7 +35,7 @@
 
   .page-main-catalog__wrapper {
     position: relative;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
 
     &::after {
       position: absolute;
@@ -52,6 +53,12 @@
 }
 
 @media (min-width: $width-desktop) {
+  .catalog__list {
+    :nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
   .page-main-catalog__title {
     font-size: 54px;
     line-height: 57px;
