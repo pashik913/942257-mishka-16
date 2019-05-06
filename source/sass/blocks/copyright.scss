@@ -1,14 +1,14 @@
 .copyright {
-  padding: 0 35px;
-  min-height: 80px;
+  padding: 20px 30px;
+  // min-height: 80px;
 }
 
 .copyright__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 28px;
   color: #000000;
+  flex-wrap: wrap;
 
   &:hover,
   &:focus {
@@ -38,5 +38,6 @@
 @media (min-width: $width-tablet) {
   .copyright {
     padding: 0;
+    padding-top: 6px;
   }
 }

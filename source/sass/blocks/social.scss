@@ -9,13 +9,13 @@
 
   min-height: 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 0 57px;
   align-items: center;
 }
 
 .social__item {
-  padding: 30px 20px;
+  padding: 20px;
 }
 
 .social__link {
@@ -34,5 +34,9 @@
 @media (min-width: $width-tablet) {
   .social {
     border: transparent;
+  }
+
+  .social__list {
+    padding-top: 9px;
   }
 }

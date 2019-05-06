@@ -5,6 +5,7 @@
 @import "base/container.scss";
 @import "base/normalize.scss";
 @import "base/visually-hidden.scss";
+@import "blocks/button.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/about-us.scss";
 @import "blocks/goods.scss";
@@ -12,10 +13,16 @@
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
 @import "blocks/product-of-week.scss";
-@import "blocks/button.scss";
 @import "blocks/page-main.scss";
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/catalog.scss";
 @import "blocks/contacts.scss";
+@import "blocks/page-main-form.scss";
+@import "blocks/filter-type.scss";
+@import "blocks/filter-color.scss";
+@import "blocks/name.scss";
+@import "blocks/personal-contacts.scss";
+@import "blocks/additional-info.scss";
+@import "blocks/modal.scss";

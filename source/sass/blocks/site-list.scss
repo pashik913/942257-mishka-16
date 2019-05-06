@@ -1,7 +1,7 @@
 .site-list {
   @include reset-list;
 
-  // display: none;
+  display: none;
   position: relative;
   font-size: 17px;
   line-height: 24px;
@@ -19,11 +19,13 @@
   display: block;
   color: $black-color;
   padding: 32px 30px 30px 76px;
-  padding-left: 25%;
+
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    span {
+      opacity: 0.6;
+    }
 
     .site-list__icon {
       opacity: 1;
@@ -37,11 +39,11 @@
 }
 
 .site-list__icon--search {
-  left: 15%;
+  left: 25px;
 }
 
 .site-list__icon--cart {
-  left: 15%;
+  left: 25px;
 }
 
 .site-list__item {
@@ -59,15 +61,36 @@
   order: 2;
 }
 
-.site-list--desktop-menu {
-  display: none;
+.site__list--border {
+  border-top: 1px solid #ececec;
 }
 
+.site-list--bot-menu,
+.site-list--top-menu {
+  li {
+    background-color: #ffffff;
+  }
+}
+
+.main-nav__list.site-list--desktop-menu {
+  display: none;
+}
 
 @media (min-width: $width-tablet) {
   .site-list {
     display: flex;
     margin: 0;
+  }
+
+  .site-list--bot-menu,
+  .site-list--top-menu {
+    li {
+      background-color: transparent;
+    }
+  }
+
+  .site__list--border {
+    border: none;
   }
 
   .site-list__item {
@@ -82,69 +105,107 @@
       border-left: 1px solid gainsboro;
     }
 
-    .site-list__link {
-      padding: 35px 0 35px 83px;
+    &:first-child {
+      a {
+        padding-bottom: 64px;
+      }
     }
 
-    span {
+    .site-list__link {
+      padding: 31px 0 33px 83px;
+      min-height: 87px;
+    }
+
+    .site-list__link--search {
+      padding-top: 55px;
+    }
+
+    .site-list__item-hidden {
       display: none;
     }
-
-    // padding-top: -105px;
   }
 
   .site-list__item-delivery {
     display: block;
     order: 2;
+    z-index: 2;
+    margin-top: 16px;
   }
 
   .site-list--bot-menu {
     padding-right: 95px;
+    z-index: 2;
 
     .site-list__item {
       font-size: 15px;
       line-height: 24px;
-      padding-right: 37px;
+      margin-right: 37px;
     }
 
     .site-list__link {
-      padding: 25px 0;
+      padding: 16px 0;
     }
   }
 
   .site-list__icon--search {
-    left: 31px;
+    left: 35px;
+    top: 34px;
+  }
+
+  .site-list__icon--cart {
+    left: 34px;
+    top: 32px;
   }
 
   .site-list--desktop-menu {
     display: none;
+    z-index: 2;
   }
 }
 
 @media (min-width: $width-desktop) {
-  .site-list--desktop-menu {
+  .main-nav__list.site-list--desktop-menu {
     display: flex;
+
+    .site-list__item {
+      margin-right: 60px;
+    }
+  }
+
+  .site-list__link {
+    padding: 15px 0;
   }
 
   .site-list--bot-menu {
     font-size: 17px;
     order: -1;
-    padding-right: 40px;
+    padding-right: 0;
 
     .site-list__item {
       font-size: 17px;
-    }
-  }
+      margin-right: 70px;
 
-  .site-list--top-menu {
-    order: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   .site-list {
     font-size: 15px;
   }
 
-  .site-list__link {
-    padding: 25px 60px 25px 0;
+  .site-list--top-menu {
+    order: 0;
+    font-size: 17px;
+    padding-top: 2px;
+
+    .site-list__link {
+      padding: 31px 0 31px 83px;
+    }
+  }
+
+  .site-list--bot-menu .site-list__link {
+    padding: 30px 0;
   }
 }

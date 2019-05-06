@@ -1,8 +1,12 @@
+.page-header {
+  min-height: 79px;
+}
+
 .page-header__wrapper {
   position: relative;
   text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #ececec;
+  padding: 23px 0;
+  padding-bottom: 17px;
 }
 
 .page-header__toggle {
@@ -15,8 +19,9 @@
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  z-index: 2;
 
-  span {
+  .page-header__toggle-line {
     position: relative;
     display: block;
     left: 30px;
@@ -46,18 +51,116 @@
   }
 }
 
+// .page-header--opened {
+//   .page-header__toggle-line {
+//     background-color: transparent;
+//
+//     &::after,
+//     &::before {
+//       top: 0;
+//       position: absolute;
+//       content: "";
+//     }
+//
+//     &::after {
+//       transform: rotate(-45deg);
+//     }
+//
+//     &::before {
+//       transform: rotate(45deg);
+//     }
+//   }
+//
+//   .site-list {
+//     display: block;
+//   }
+// }
+
+.page-header__mock {
+  border-bottom: 1px solid #ececec;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.page-header__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+// .page-header--nojs {
+//   .page-header__toggle {
+//     display: none;
+//   }
+//
+//   .site-list {
+//     display: block;
+//   }
+// }
+
+@media (max-width: $mobile-width-only) {
+  .page-header--opened {
+    .page-header__toggle-line {
+      background-color: transparent;
+
+      &::after,
+      &::before {
+        top: 0;
+        position: absolute;
+        content: "";
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+    }
+
+    .site-list {
+      display: block;
+    }
+  }
+
+  .page-header--nojs {
+    .page-header__toggle {
+      display: none;
+    }
+
+    .site-list {
+      display: block;
+    }
+  }
+}
+
 @media (min-width: $width-tablet) {
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
   .page-header__mock {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     height: 170px;
-    align-items: center;
+    border: none;
   }
 
   .page-header__wrapper {
     order: -1;
-    padding-right: 230px;
+    margin-right: 205px;
     border: none;
+    margin-top: 22px;
+    padding: 0;
   }
 
   .page-header__toggle {
@@ -66,9 +169,16 @@
 }
 
 @media (min-width: $width-desktop) {
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+  }
+
   .page-header__wrapper {
     order: 0;
-    padding-right: 100px;
+    margin: 0;
+    padding-top: 9px;
+    padding-right: 25px;
   }
 
   .page-header__mock {
