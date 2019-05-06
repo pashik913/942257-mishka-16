@@ -9,6 +9,11 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
+
+gulp.task("images", function ( {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+}))
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
