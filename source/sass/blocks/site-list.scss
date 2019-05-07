@@ -20,7 +20,6 @@
   color: $black-color;
   padding: 32px 30px 30px 76px;
 
-
   &:hover,
   &:focus {
     span {
@@ -29,7 +28,7 @@
 
     .site-list__icon {
       opacity: 1;
-      fill: #63d1bb;
+      fill: $blue-color;
     }
   }
 

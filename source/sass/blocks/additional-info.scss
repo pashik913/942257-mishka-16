@@ -13,13 +13,17 @@
 
 .additional-info__list {
   margin-top: 23px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .additional-info__tel-label {
   ::placeholder {
     color: rgba(68, 68, 68, 0.3);
-    padding: 16px 80px 0 17px;
+    padding: 11px 60px 0 13px;
+  }
+
+  textarea {
+    resize: none;
   }
 }
 
@@ -38,9 +42,9 @@
 @media (min-width: $width-tablet) {
   .additional-info__list {
     margin: 0;
-    padding-left: 150px;
-    margin-top: -17px;
-    margin-bottom: 53px;
+    padding-left: 167px;
+    margin-top: -34px;
+    margin-bottom: 48px;
   }
 
   .additional-info__bot-wrapper {
@@ -64,10 +68,16 @@
 
 @media (min-width: $width-desktop) {
   .additional-info__bot-wrapper {
-    padding-left: 150px;
+    padding-left: 114px;
   }
 
   .additional-info__wrapper {
-    padding-right: 150px;
+    padding-right: 175px;
+    padding-left: 61px;
+  }
+
+  .additional-info__list {
+    padding-left: 115px;
+    margin-bottom: 45px;
   }
 }

@@ -106,18 +106,18 @@
         <div class="container">
           <div class="filter-type__wrapper">
             <fieldset class="filter-type__fieldset">
-              <legend class="filter-type__legend">Тип</legend>
+              <legend class="filter-type__legend">Тип<span class="page-main-form__line"></span></legend>
               <ul class="filter-type__radio-list page-main-form__list">
                 <li class="filter-type__radio-item">
-                  <label class="filter-type__radio-label" for="radio-filter-interrior-accessory">
-                    <input name="product-group" value="interrior-accessory" id="radio-filter-interrior-accessory" type="radio" checked>
-                    <span>Акссесуар для интерьера</span>
+                  <label class="filter-type__radio-label">
+                    <input class="visually-hidden" name="product-group" value="interrior-accessory" type="radio" checked>
+                    <span class="filter-type__radio">Акссесуар для интерьера</span>
                   </label>
                 </li>
                 <li class="filter-type__radio-item">
-                  <label class="filter-type__radio-label" for="radio-filter-toy">
-                    <input name="product-group" value="toy" id="radio-filter-toy" type="radio">
-                    <span>Детская игрушка</span>
+                  <label class="filter-type__radio-label">
+                    <input class="visually-hidden" name="product-group" value="toy" type="radio">
+                    <span class="filter-type__radio">Детская игрушка</span>
                   </label>
                 </li>
               </ul>
@@ -130,43 +130,43 @@
         <div class="container">
           <div class="filter-color__wrapper">
             <fieldset>
-              <legend>Цвет</legend>
+              <legend>Цвет<span class="page-main-form__line"></span></legend>
               <ul class="filter-color__checkbox-list filter-color__checkbox-list--top page-main-form__list">
-                <li class="filter-color__checkbox-item">
-                  <label class="filter-color__checkbox-label" for="checkbox-filter-color-white">
-                    <input name="product-color" value="white" id="checkbox-filter-color-white" type="checkbox" checked>
-                    <span>Белый</span>
+                <li class="filter-color__checkbox-item filter-color__checkbox-item--left-column">
+                  <label class="filter-color__checkbox-label">
+                    <input class="visually-hidden" name="product-color" value="white" type="checkbox" checked>
+                    <span class="filter-color__checkbox">Белый</span>
                   </label>
                 </li>
                 <li class="filter-color__checkbox-item">
-                  <label class="filter-color__checkbox-label" for="checkbox-filter-color-grey">
-                    <input name="product-color" value="grey" id="checkbox-filter-color-grey" type="checkbox" checked>
-                    <span>Серый</span>
+                  <label class="filter-color__checkbox-label">
+                    <input class="visually-hidden" name="product-color" value="grey" type="checkbox" checked>
+                    <span class="filter-color__checkbox">Серый</span>
                   </label>
                 </li>
 
-                <li class="filter-color__checkbox-item">
-                  <label class="filter-color__checkbox-label" for="checkbox-filter-color-tiffany">
-                    <input name="product-color" value="tiffany" id="checkbox-filter-color-tiffany" type="checkbox">
-                    <span>«Тиффани»</span>
+                <li class="filter-color__checkbox-item filter-color__checkbox-item--left-column">
+                  <label class="filter-color__checkbox-label">
+                    <input class="visually-hidden" name="product-color" value="tiffany" type="checkbox">
+                    <span class="filter-color__checkbox">«Тиффани»</span>
                   </label>
                 </li>
                 <li class="filter-color__checkbox-item">
-                  <label class="filter-color__checkbox-label" for="checkbox-filter-color-black">
-                    <input name="product-color" value="black" id="checkbox-filter-color-black" type="checkbox">
-                    <span>Чёрный</span>
+                  <label class="filter-color__checkbox-label">
+                    <input class="visually-hidden" name="product-color" value="black" type="checkbox">
+                    <span class="filter-color__checkbox">Чёрный</span>
+                  </label>
+                </li>
+                <li class="filter-color__checkbox-item filter-color__checkbox-item--left-column">
+                  <label class="filter-color__checkbox-label">
+                    <input class="visually-hidden" name="product-color" value="pink" type="checkbox">
+                    <span class="filter-color__checkbox">Розовый</span>
                   </label>
                 </li>
                 <li class="filter-color__checkbox-item">
-                  <label class="filter-color__checkbox-label" for="checkbox-filter-color-pink">
-                    <input name="product-color" value="pink" id="checkbox-filter-color-pink" type="checkbox">
-                    <span>Розовый</span>
-                  </label>
-                </li>
-                <li class="filter-color__checkbox-item">
-                  <label class="filter-color__checkbox-label" for="checkbox-filter-color-orange">
-                    <input name="product-color" value="orange" id="checkbox-filter-color-orange" type="checkbox">
-                    <span>Оранжевый</span>
+                  <label class="filter-color__checkbox-label">
+                    <input class="visually-hidden" name="product-color" value="orange" type="checkbox">
+                    <span class="filter-color__checkbox">Оранжевый</span>
                   </label>
                 </li>
               </ul>
@@ -179,24 +179,24 @@
         <div class="container">
           <div class="name__wrapper">
             <fieldset>
-              <legend>ФИО</legend>
+              <legend>ФИО<span class="page-main-form__line"></span></legend>
               <ul class="name__full-name-list page-main-form__list">
                 <li class="name__full-name-item">
-                  <span><p>Имя:</p></span>
                   <label class="name__full-name-label" for="first-name">
-                    <input type="text" value="Введите ваше имя*" id="first-name">
+                    <span>Имя:</span>
+                    <input type="text" placeholder="Введите ваше имя*" id="first-name">
                   </label>
                 </li>
                 <li class="name__full-name-item">
-                  <span><p>Фамилия:</p></span>
                   <label class="name__full-name-label" for="last-name">
-                    <input type="text" value="Укажите фамилию*" id="last-name">
+                    <span>Фамилия:</span>
+                    <input type="text" placeholder="Укажите фамилию*" id="last-name">
                   </label>
                 </li>
                 <li class="name__full-name-item">
-                  <span><p>Отчество:</p></span>
                   <label class="name__full-name-label" for="middle-name">
-                    <input type="text" value="Отчество, если желаете" id="middle-name">
+                    <span>Отчество:</span>
+                    <input type="text" placeholder="Отчество, если желаете" id="middle-name">
                   </label>
                 </li>
               </ul>
@@ -209,22 +209,28 @@
         <div class="container">
           <div class="personal-contacts__wrapper">
             <fieldset>
-              <legend>Тел</legend>
+              <legend>Тел<span class="page-main-form__line"></span></legend>
               <ul class="personal-contacts__tel-list page-main-form__list">
                 <li class="personal-contacts__tel-item">
-                  <label class="personal-contact-label" for="tel-number">
-                    <input type="tel" value="+7 XXX XXX XX XX*" id="tel-number">
+                  <label class="personal-contacts__tel-label" for="tel-number">
+                    <input type="tel" placeholder="+7 XXX XXX XX XX*" id="tel-number">
                   </label>
+                  <svg class="personal-contacts__icon-phone" width="25" height="24">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>E-Mail</legend>
+              <legend>E-Mail<span class="page-main-form__line"></span></legend>
               <ul class="personal-contacts__email-list page-main-form__list">
                 <li class="personal-contacts__email-item">
-                  <label class="personal-contact__tel-label" for="email">
-                    <input type="tel" value="Ваш Email*" id="email">
+                  <label class="personal-contacts__email-label" for="email">
+                    <input type="tel" placeholder="Ваш Email*" id="email">
                   </label>
+                  <svg class="personal-contacts__icon-mail" width="32" height="26">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </li>
               </ul>
             </fieldset>
@@ -236,7 +242,7 @@
         <div class="container">
           <div class="additional-info__wrapper">
             <fieldset>
-              <legend>Доп</legend>
+              <legend>Доп<span class="page-main-form__line"></span></legend>
               <ul class="additional-info__list page-main-form__list">
                 <li class="additional-info__item">
                   <label class="additional-info__tel-label" for="additional-info">
