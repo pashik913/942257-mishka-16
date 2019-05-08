@@ -1,6 +1,5 @@
 .social {
   position: relative;
-
   border-bottom: 1px solid gainsboro;
 }
 
@@ -22,7 +21,7 @@
   &:hover,
   &:focus {
     .social__icon {
-      fill: #46c1ae;
+      fill: $blue-color;
     }
   }
 

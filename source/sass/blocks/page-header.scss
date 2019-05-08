@@ -53,7 +53,6 @@
 
 .page-header__mock {
   border-bottom: 1px solid #ececec;
-  position: absolute;
   z-index: 1;
   width: 100%;
 }
@@ -92,6 +91,10 @@
 
     .site-list {
       display: block;
+    }
+
+    .page-header__mock {
+      position: absolute;
     }
   }
 

@@ -36,6 +36,16 @@
   a {
     color: #444444;
     border-bottom: 1px solid #63d1bb;
+
+    &:hover,
+    &:focus {
+      color: $blue-color;
+    }
+
+    &:active {
+      color: $blue-color;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -84,7 +94,7 @@
       position: absolute;
       width: 47px;
       height: 81px;
-      background-image: url("../img/icon-flag.svg");
+      background-image: url("../img/icons/icon-flag.svg");
       background-repeat: no-repeat;
       right: 0;
       top: -15px;
@@ -164,6 +174,7 @@
   .contacts__info {
     display: flex;
     flex-direction: column;
+    padding-left: 5px;
   }
 
   .contacts__text--email {
