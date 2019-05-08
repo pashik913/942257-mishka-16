@@ -97,7 +97,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 20px;
 }
 
 .catalog-production {
@@ -126,14 +126,14 @@
 
   font-size: 17px;
   line-height: 24px;
-  padding: 25px 10px 26px 89px;
+  padding: 27px 10px 26px 89px;
 
   &::before {
     position: absolute;
     content: "";
     width: 32px;
     height: 27px;
-    top: 30px;
+    top: 33px;
     left: 33px;
     background-image: url("../img/icons/icon-video.svg");
     background-repeat: no-repeat;
@@ -264,6 +264,7 @@
     padding: 35px 10px 11px 106px;
 
     &::before {
+      top: 31px;
       left: 41px;
     }
   }
