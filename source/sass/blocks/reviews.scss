@@ -20,10 +20,6 @@
   padding: 0 30px;
   margin: 0 auto;
   padding-bottom: 45px;
-
-  // a {
-  //   margin: 0 auto;
-  // }
 }
 
 .reviews__title {
@@ -88,6 +84,15 @@
   padding: 13px 42px 13px 38px;
   margin: 0 auto;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .slider__item {

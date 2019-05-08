@@ -5,20 +5,17 @@
 .filter-type__radio-list {
   margin-top: 25px;
 
-  :first-child {
-    margin-bottom: 13px;
+  li {
+    &:first-child {
+      margin-bottom: 13px;
+    }
   }
 }
 
 .filter-type__radio {
   position: relative;
   cursor: pointer;
-  display: block;
   padding-left: 60px;
-}
-
-.filter-type__radio-label {
-  display: block;
 }
 
 .filter-type__radio-item {
@@ -50,6 +47,19 @@
     background-color: $blue-color;
     cursor: pointer;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: $blue-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #dadada;
+    }
+  }
 }
 
 .filter-type__radio-label input[type="radio"] + .filter-type__radio {
@@ -63,6 +73,19 @@
     border-radius: 50%;
     border: 2px solid #000000;
     cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: $blue-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #dadada;
+    }
   }
 }
 
@@ -93,15 +116,17 @@
   }
 
   .filter-type {
-    margin-bottom: 19px;
+    margin-bottom: 54px;
   }
 
   .filter-type__radio-list {
     padding-left: 187px;
     margin-top: -28px;
 
-    :first-child {
-      margin-bottom: 36px;
+    li {
+      &:first-child {
+        margin-bottom: 36px;
+      }
     }
   }
 }

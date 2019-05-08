@@ -36,6 +36,16 @@
   a {
     color: #444444;
     border-bottom: 1px solid #63d1bb;
+
+    &:hover,
+    &:focus {
+      color: $blue-color;
+    }
+
+    &:active {
+      color: $blue-color;
+      opacity: 0.3;
+    }
   }
 }
 
