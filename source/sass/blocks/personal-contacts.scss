@@ -22,6 +22,15 @@
 .personal-contacts__tel-item,
 .personal-contacts__email-item {
   position: relative;
+
+  // &:hover,
+  // &:focus {
+  //   .personal-contacts__icon-phone,
+  //   .personal-contacts__icon-mail {
+  //     opacity: 1;
+  //     fill: $blue-color;
+  //   }
+  // }
 }
 
 .personal-contacts__icon-phone,
@@ -46,6 +55,12 @@
   &:hover,
   &:focus {
     border-color: $blue-color;
+
+    .personal-contacts__icon-phone,
+    .personal-contacts__icon-mail {
+      opacity: 1;
+      fill: $blue-color;
+    }
   }
 }
 
