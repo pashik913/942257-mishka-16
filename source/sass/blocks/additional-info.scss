@@ -18,11 +18,16 @@
 .additional-info__tel-label {
   ::placeholder {
     color: rgba(68, 68, 68, 0.3);
-    padding: 11px 60px 0 13px;
   }
 
   textarea {
     resize: none;
+    padding: 11px 60px 0 13px;
+
+    &:hover,
+    &:focus {
+      border-color: $blue-color;
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 var burger = document.querySelector('.page-header__toggle');
 var header = document.querySelector('.page-header');
-var popup = document.querySelector('.modal-link-js');
+var popup = document.querySelectorAll('.modal-link-js');
 var modal = document.querySelector('.modal');
 var close = document.querySelector('.modal__button');
 

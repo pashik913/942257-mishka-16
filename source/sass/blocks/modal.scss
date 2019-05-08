@@ -99,6 +99,11 @@
   height: 50px;
   border: 2px solid #f1f1f1;
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    border-color: #e3e3e3;
+  }
 }
 
 .modal__label input[type="radio"]:checked + .modal__radio {

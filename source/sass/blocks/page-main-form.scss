@@ -48,6 +48,26 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-main-form {
+    legend {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      &::after {
+        content: "";
+        width: 198px;
+        height: 1px;
+        background: $blue-color;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
 @media (min-width: $width-tablet) {
   .page-main-form {
     margin-top: -79px;

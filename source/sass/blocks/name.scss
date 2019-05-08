@@ -29,7 +29,18 @@
   }
 }
 
+.name__full-name-label input[type="text"] {
+  &:hover,
+  &:focus {
+    border-color: $blue-color;
+  }
+}
+
 @media (min-width: $width-tablet) {
+  .name__full-name-label input[type="text"] {
+    padding: 0 17px;
+  }
+
   .name__full-name-list {
     padding-left: 168px;
     margin-top: -35px;
@@ -42,10 +53,6 @@
   .name__full-name-label {
     display: flex;
     align-items: center;
-
-    ::placeholder {
-      padding: 0 17px;
-    }
   }
 
   .name__full-name-item {

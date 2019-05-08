@@ -29,6 +29,7 @@
   position: absolute;
   top: 12px;
   right: 5px;
+  opacity: 0.2;
 }
 
 .personal-contacts__tel-list {
@@ -40,7 +41,20 @@
   margin-top: 7px;
 }
 
+.personal-contacts__tel-label input[type="tel"],
+.personal-contacts__email-label input[type="email"] {
+  &:hover,
+  &:focus {
+    border-color: $blue-color;
+  }
+}
+
 @media (min-width: $width-tablet) {
+  .personal-contacts__tel-label input[type="tel"],
+  .personal-contacts__email-label input[type="email"] {
+    padding: 0 50px 0 17px;
+  }
+
   .personal-contacts__icon-phone,
   .personal-contacts__icon-mail {
     right: 24px;
@@ -54,10 +68,6 @@
 
     input {
       background-color: transparent;
-    }
-
-    ::placeholder {
-      padding: 0 17px;
     }
   }
 

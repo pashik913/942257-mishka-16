@@ -14,7 +14,6 @@
   line-height: 30px;
   font-weight: bold;
   color: #000000;
-  // padding-bottom: 31px;
 }
 
 .about-us__list {
@@ -23,13 +22,11 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  // padding-left: 30px;
 }
 
 .about-us__item {
   position: relative;
   padding-top: 84px;
-  // padding-right: 60px;
 }
 
 .about-us__item--feature-flower {
@@ -40,7 +37,7 @@
     position: absolute;
     width: 32px;
     height: 37px;
-    background-image: url("../img/icon-feature-flower.svg");
+    background-image: url("../img/icons/icon-feature-flower.svg");
     background-repeat: no-repeat;
   }
 
@@ -55,7 +52,7 @@
     position: absolute;
     width: 47px;
     height: 27px;
-    background-image: url("../img/icon-feature-money.svg");
+    background-image: url("../img/icons/icon-feature-money.svg");
     background-repeat: no-repeat;
   }
 
@@ -70,7 +67,7 @@
     position: absolute;
     width: 34px;
     height: 27px;
-    background-image: url("../img/icon-feature-heart.svg");
+    background-image: url("../img/icons/icon-feature-heart.svg");
     background-repeat: no-repeat;
   }
 
@@ -85,7 +82,7 @@
     position: absolute;
     width: 35px;
     height: 34px;
-    background-image: url("../img/icon-feature-ball.svg");
+    background-image: url("../img/icons/icon-feature-ball.svg");
     background-repeat: no-repeat;
   }
 
@@ -100,7 +97,7 @@
     position: absolute;
     width: 55px;
     height: 23px;
-    background-image: url("../img/icon-feature-rocket.svg");
+    background-image: url("../img/icons/icon-feature-rocket.svg");
     background-repeat: no-repeat;
   }
 }
@@ -113,7 +110,7 @@
     position: absolute;
     width: 33px;
     height: 32px;
-    background-image: url("../img/icon-feature-gift.svg");
+    background-image: url("../img/icons/icon-feature-gift.svg");
     background-repeat: no-repeat;
   }
 
