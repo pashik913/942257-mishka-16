@@ -55,6 +55,14 @@
   padding-bottom: 39px;
 }
 
+.contacts__map-interactive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
 .contacts__map {
   display: block;
   margin: 0 auto;
@@ -69,6 +77,11 @@
 }
 
 @media (min-width: $width-tablet) {
+  .contacts__map-interactive {
+    width: 768px;
+    height: 457px;
+  }
+
   .contacts {
     width: auto;
     margin: 0;
@@ -130,6 +143,11 @@
 }
 
 @media (min-width: $width-desktop) {
+  .contacts__map-interactive {
+    width: 525px;
+    height: 457px;
+  }
+
   .contacts {
     margin-top: 50px;
   }
