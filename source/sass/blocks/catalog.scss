@@ -37,7 +37,9 @@
   }
 
   &:active {
-    opacity: 0.3;
+    .catalog__item-title {
+      opacity: 0.3;
+    }
   }
 }
 
