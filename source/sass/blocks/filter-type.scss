@@ -19,6 +19,15 @@
 .filter-type__radio-item {
   min-height: 40px;
   padding-top: 10px;
+
+  &:focus-within {
+    .filter-type__radio-label input[type="radio"]:checked + .filter-type__radio,
+    .filter-type__radio-label input[type="radio"] + .filter-type__radio {
+      &::before {
+        border-color: $blue-color;
+      }
+    }
+  }
 }
 
 .filter-type__radio-label input[type="radio"]:checked + .filter-type__radio {
@@ -47,7 +56,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     &::before {
       border-color: $blue-color;
     }
