@@ -2,6 +2,12 @@
   min-height: 79px;
 }
 
+.page-header__item-delivery {
+  font-size: 15px;
+  line-height: 24px;
+  display: none;
+}
+
 .page-header__wrapper {
   position: relative;
   text-align: center;
@@ -110,6 +116,13 @@
 }
 
 @media (min-width: $width-tablet) {
+  .page-header__item-delivery {
+    display: block;
+    order: 2;
+    z-index: 2;
+    margin-top: 16px;
+  }
+
   .page-header__logo-image {
     width: 112px;
     height: 46px;

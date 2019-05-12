@@ -78,6 +78,10 @@
   span {
     padding-right: 30px;
   }
+
+  p {
+    margin: 0;
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -196,6 +200,7 @@
   .contacts__info {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding-left: 5px;
   }
 

@@ -10,10 +10,8 @@
 
   flex-wrap: wrap;
 
-  li {
-    &:nth-child(3n+3) {
-      margin-right: 0;
-    }
+  li:nth-child(3n+3) {
+    margin-right: 0;
   }
 }
 
@@ -202,6 +200,7 @@
     width: 81px;
     height: 62px;
     background-size: contain;
+    opacity: 0.3;
   }
 }
 

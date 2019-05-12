@@ -15,9 +15,11 @@
   margin-bottom: 12px;
 }
 
-.additional-info__tel-label {
+.additional-info__label {
   textarea::placeholder {
     color: rgba(68, 68, 68, 0.3);
+    font-size: 17px;
+    line-height: 18px;
   }
 
   textarea {
@@ -44,6 +46,13 @@
 }
 
 @media (min-width: $width-tablet) {
+  .additional-info__label {
+    textarea::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
   .additional-info__list {
     margin: 0;
     padding-left: 167px;

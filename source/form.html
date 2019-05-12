@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
      document.createElement( "picture" );
@@ -74,7 +76,7 @@
                 </a>
               </li>
             </ul>
-            <span class="site-list__item-delivery">Бесплатная доставка по России</span>
+            <span class="page-header__item-delivery">Бесплатная доставка по России</span>
           </div>
         </div>
       </nav>
@@ -236,7 +238,7 @@
                 <legend>Доп</legend>
                 <ul class="additional-info__list page-main-form__list">
                   <li class="additional-info__item">
-                    <label class="additional-info__tel-label" for="additional-info">
+                    <label class="additional-info__label" for="additional-info">
                       <textarea placeholder="Опишите все ваши пожелания к заказу" id="additional-info"></textarea>
                     </label>
                   </li>
@@ -263,21 +265,21 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link" aria-label="Мы в инстаграм">
                   <svg class="social__icon" width="22" height="21">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link" aria-label="Мы в фейсбуке">
                   <svg class="social__icon" width="15" height="29">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link"  aria-label="Мы в твиттере">
                   <svg class="social__icon" width="24" height="20">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
@@ -285,7 +287,6 @@
               </li>
             </ul>
           </div>
-
           <div class="page-footer__copyright copyright">
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               <b class="copyright__text">Разработано</b>
@@ -295,38 +296,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="modal">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <fieldset>
-          <legend>Выберите размер:</legend>
-            <ul class="modal__list">
-              <li class="modal__item">
-                <label class="modal__label">
-                  <input class="visually-hidden" value="Small" name="size" type="radio" checked>
-                  <span class="modal__radio">S</span>
-                </label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__label">
-                  <input class="visually-hidden" value="Middle" name="size" type="radio">
-                  <span class="modal__radio">M</span>
-                </label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__label">
-                  <input class="visually-hidden" value="Large" name="size" type="radio">
-                  <span class="modal__radio">L</span>
-                </label>
-              </li>
-            </ul>
-        </fieldset>
-        <div class="modal__wrapper-button">
-          <a class="modal__button button" type="submit">Добваить</a>
-        </div>
-      </div>
-    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

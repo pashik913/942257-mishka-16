@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
      document.createElement( "picture" );
@@ -74,7 +76,7 @@
                 </a>
               </li>
             </ul>
-            <span class="site-list__item-delivery">Бесплатная доставка по России</span>
+            <span class="page-header__item-delivery">Бесплатная доставка по России</span>
           </div>
         </div>
       </nav>
@@ -105,7 +107,7 @@
                 <p class="catalog__item-text">Рост 30 см, вес 200 г</p>
               <div class="catalog__wrapper-price">
                 <span class="catalog__item-price">1 200 руб.</span>
-                <a href="#" class="catalog__modal-link modal-link-js">
+                <a href="#" class="catalog__modal-link modal-link-js" aria-label="Добавить товар в корзину">
                   <svg fill="#231F20" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -132,7 +134,7 @@
               <p class="catalog__item-text">Диаметр 15 см, высота 10 см</p>
               <div class="catalog__wrapper-price">
                 <span class="catalog__item-price">690 руб.</span>
-                <a href="#" class="catalog__modal-link modal-link-js">
+                <a href="#" class="catalog__modal-link modal-link-js" aria-label="Добавить товар в корзину">
                   <svg fill="#231F20" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -159,7 +161,7 @@
               <p class="catalog__item-text">Диаметр 30 см, высота 30 см</p>
               <div class="catalog__wrapper-price">
                 <span class="catalog__item-price">1 500 руб.</span>
-                <a href="#" class="catalog__modal-link modal-link-js">
+                <a href="#" class="catalog__modal-link modal-link-js" aria-label="Добавить товар в корзину">
                   <svg fill="#231F20" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -181,7 +183,7 @@
 
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="catalog-production__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+              <img class="catalog-production__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
             </picture>
             <button class="catalog-production__play-button"></button>
           </div>
@@ -193,7 +195,7 @@
             наши товары.
           </p>
           <div class="catalog-production__wrapper-button">
-            <a type="button" class="catalog-production__button button">Сделать заказ</a>
+            <button type="button" class="catalog-production__button button">Сделать заказ</button>
           </div>
         </div>
       </section>
@@ -210,21 +212,21 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link" aria-label="Мы в инстаграм">
                   <svg class="social__icon" width="22" height="21">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link" aria-label="Мы в фейсбуке">
                   <svg class="social__icon" width="15" height="29">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link"  aria-label="Мы в твиттере">
                   <svg class="social__icon" width="24" height="20">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
@@ -232,7 +234,6 @@
               </li>
             </ul>
           </div>
-
           <div class="page-footer__copyright copyright">
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               <b class="copyright__text">Разработано</b>
@@ -270,7 +271,7 @@
             </ul>
         </fieldset>
         <div class="modal__wrapper-button">
-          <a class="modal__button button" type="submit">Добваить</a>
+          <button class="modal__button button" type="submit">Добaвить</button>
         </div>
       </div>
     </div>
