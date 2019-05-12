@@ -47,7 +47,7 @@
 .goods__link {
   color: #ffffff;
   display: block;
-  padding: 25px 210px 30px 29px;
+  padding: 25px 115px 30px 29px;
 
   &:active {
     opacity: 0.3;
@@ -64,12 +64,13 @@
     top: 23px;
     right: 36px;
     background-repeat: no-repeat;
+    opacity: 0.5;
   }
 
   &:hover,
   &:focus {
     &::before {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }
 
@@ -90,12 +91,13 @@
     background-repeat: no-repeat;
     top: 21px;
     right: 27px;
+    opacity: 0.5;
   }
 
   &:hover,
   &:focus {
     &::before {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   }
 

@@ -50,17 +50,11 @@
   border-bottom: 1px solid #ececec;
 }
 
-.site-list__item-delivery {
-  font-size: 15px;
-  line-height: 24px;
-  display: none;
-}
-
 .site-list--bot-menu {
   order: 2;
 }
 
-.site__list--border {
+.site-list--border {
   border-top: 1px solid #ececec;
 }
 
@@ -88,7 +82,7 @@
     }
   }
 
-  .site__list--border {
+  .site-list--border {
     border: none;
   }
 
@@ -122,13 +116,6 @@
     .site-list__item-hidden {
       display: none;
     }
-  }
-
-  .site-list__item-delivery {
-    display: block;
-    order: 2;
-    z-index: 2;
-    margin-top: 16px;
   }
 
   .site-list--bot-menu {

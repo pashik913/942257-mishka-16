@@ -78,6 +78,13 @@
   border-color: $blue-color;
   margin: 0 auto;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-color;
+    color: #444444;
+    border-color: #444444;
+  }
 }
 
 .modal__radio {

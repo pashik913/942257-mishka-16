@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+     document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display: none">
@@ -20,7 +26,7 @@
         <div class="container">
           <div class="page-header__mock">
             <div class="page-header__wrapper">
-              <a href="index.html" class="page-header__logo">
+              <a href="index.html" class="page-header__logo" aria-label="На главную страницу">
                 <picture>
                   <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
                   <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
@@ -28,7 +34,7 @@
                 </picture>
               </a>
             </div>
-            <ul class="main-nav__list site-list site-list--bot-menu site__list--border">
+            <ul class="main-nav__list site-list site-list--bot-menu site-list--border">
               <li class="site-list__item">
                 <a href="catalog.html" class="site-list__link">
                   <span>Каталог товаров</span>
@@ -70,7 +76,7 @@
                 </a>
               </li>
             </ul>
-            <span class="site-list__item-delivery">Бесплатная доставка по России</span>
+            <span class="page-header__item-delivery">Бесплатная доставка по России</span>
           </div>
         </div>
       </nav>
@@ -104,7 +110,7 @@
             <div class="product-of-week__mock-description">
               <p class="product-of-week__description">
                 Экологически чистая пряжа, ручная работа.
-                Доступны в шести расцветках, и трех размерах.
+                Доступны в шести расцветках и трех размерах.
               </p>
               <table class="product-of-week__table">
                 <tr>
@@ -204,7 +210,7 @@
             </li>
           </ul>
 
-          <a href="#" class="reviews__button button">Написать</a>
+          <a href="review.html" class="reviews__button button">Написать</a>
         </div>
       </div>
       </section>
@@ -221,11 +227,11 @@
                 </li>
                 <li class="contacts__text">
                   <span>адрес:</span>
-                  <adress>
+                  <p>
                     г. Санкт-Петербург, <br>
                     ул. Большая Конюшенная,<br>
                     д. 19/8, офис 101
-                  </adress>
+                  </p>
                 </li>
               </ul>
             </div>
@@ -240,10 +246,10 @@
                 <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Как до нас добраться">
               </picture>
               <iframe class="contacts__map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1557325026858!5m2!1sru!2s"
-              width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
+              width="320" height="457" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="contacts__button-wrapper">
-              <a href="#" class="contacts__button button">Напишите нам</a>
+              <a href="write.html" class="contacts__button button">Напишите нам</a>
             </div>
           </div>
         </div>
@@ -261,21 +267,21 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link" aria-label="Мы в инстаграм">
                   <svg class="social__icon" width="22" height="21">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link" aria-label="Мы в фейсубке">
                   <svg class="social__icon" width="15" height="29">
                     <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link">
+                <a href="#" class="social__link"  aria-label="Мы в твиттере">
                   <svg class="social__icon" width="24" height="20">
                     <use xlink:href="#icon-twitter"></use>
                   </svg>
@@ -283,7 +289,6 @@
               </li>
             </ul>
           </div>
-
           <div class="page-footer__copyright copyright">
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               <b class="copyright__text">Разработано</b>
@@ -321,7 +326,7 @@
             </ul>
         </fieldset>
         <div class="modal__wrapper-button">
-          <a class="modal__button button" type="submit">Добваить</a>
+          <button class="modal__button button" type="submit">Добaвить</button>
         </div>
       </div>
     </div>

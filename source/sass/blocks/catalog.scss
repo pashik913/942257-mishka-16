@@ -9,7 +9,12 @@
   @include reset-list;
 
   flex-wrap: wrap;
+
+  li:nth-child(3n+3) {
+    margin-right: 0;
+  }
 }
+
 
 .catalog__image {
   display: block;
@@ -195,6 +200,7 @@
     width: 81px;
     height: 62px;
     background-size: contain;
+    opacity: 0.3;
   }
 }
 
@@ -340,6 +346,8 @@
 
   .catalog-production__video-link {
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .catalog-production__title,

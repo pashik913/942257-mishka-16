@@ -49,6 +49,10 @@
   }
 }
 
+.contacts__text--first-colum {
+  padding-right: 32px;
+}
+
 .contacts__map-wrapper {
   padding-top: 37px;
   position: relative;
@@ -73,6 +77,10 @@
 
   span {
     padding-right: 30px;
+  }
+
+  p {
+    margin: 0;
   }
 }
 
@@ -192,6 +200,7 @@
   .contacts__info {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding-left: 5px;
   }
 
