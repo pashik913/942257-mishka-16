@@ -9,7 +9,14 @@
   @include reset-list;
 
   flex-wrap: wrap;
+
+  li {
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
 }
+
 
 .catalog__image {
   display: block;
@@ -340,6 +347,8 @@
 
   .catalog-production__video-link {
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .catalog-production__title,

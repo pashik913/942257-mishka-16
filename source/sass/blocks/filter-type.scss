@@ -5,10 +5,8 @@
 .filter-type__radio-list {
   margin-top: 25px;
 
-  li {
-    &:first-child {
-      margin-bottom: 13px;
-    }
+  li:first-child {
+    margin-bottom: 13px;
   }
 }
 

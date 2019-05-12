@@ -1,10 +1,8 @@
 .name__full-name-list {
   margin-top: 26px;
 
-  li {
-    &:last-child {
-      padding-bottom: 0;
-    }
+  li:last-child {
+    padding-bottom: 0;
   }
 }
 
@@ -22,7 +20,7 @@
     width: 100%;
   }
 
-  ::placeholder {
+  input::placeholder {
     color: rgba(68, 68, 68, 0.3);
     font-size: 17px;
     line-height: 18px;
