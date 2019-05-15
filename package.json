@@ -47,6 +47,6 @@
     "node": "8.15"
   },
   "dependencies": {
-    "gulp-rename": "^1.4.0"
+    "gulp-rename": "1.4.0"
   }
 }

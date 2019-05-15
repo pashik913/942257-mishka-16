@@ -192,7 +192,7 @@
             наши товары.
           </p>
           <div class="catalog-production__wrapper-button">
-            <button type="button" class="catalog-production__button button">Сделать заказ</button>
+            <a href="form.html" class="catalog-production__button button">Сделать заказ</a>
           </div>
         </div>
       </section>
@@ -244,32 +244,34 @@
     <div class="modal">
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
-        <fieldset>
-          <legend>Выберите размер:</legend>
-            <ul class="modal__list">
-              <li class="modal__item">
-                <label class="modal__label">
-                  <input class="visually-hidden" value="Small" name="size" type="radio" checked>
-                  <span class="modal__radio">S</span>
-                </label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__label">
-                  <input class="visually-hidden" value="Middle" name="size" type="radio">
-                  <span class="modal__radio">M</span>
-                </label>
-              </li>
-              <li class="modal__item">
-                <label class="modal__label">
-                  <input class="visually-hidden" value="Large" name="size" type="radio">
-                  <span class="modal__radio">L</span>
-                </label>
-              </li>
-            </ul>
-        </fieldset>
-        <div class="modal__wrapper-button">
-          <button class="modal__button button" type="submit">Добaвить</button>
-        </div>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Выберите размер:</legend>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <label class="modal__label">
+                    <input class="visually-hidden" value="Small" name="size" type="radio" checked>
+                    <span class="modal__radio">S</span>
+                  </label>
+                </li>
+                <li class="modal__item">
+                  <label class="modal__label">
+                    <input class="visually-hidden" value="Middle" name="size" type="radio">
+                    <span class="modal__radio">M</span>
+                  </label>
+                </li>
+                <li class="modal__item">
+                  <label class="modal__label">
+                    <input class="visually-hidden" value="Large" name="size" type="radio">
+                    <span class="modal__radio">L</span>
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+          <div class="modal__wrapper-button">
+            <button class="modal__button button" type="submit">Добaвить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/script.js"></script>

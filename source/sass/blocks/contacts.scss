@@ -61,10 +61,9 @@
 
 .contacts__map-interactive {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
+  width: 100%;
+  top: 37px;
+  right: 0;
 }
 
 .contacts__map {
@@ -86,6 +85,7 @@
 
 @media (min-width: $width-tablet) {
   .contacts__map-interactive {
+    top: 56px;
     width: 768px;
     height: 457px;
   }
@@ -152,6 +152,7 @@
 
 @media (min-width: $width-desktop) {
   .contacts__map-interactive {
+    top: 0;
     width: 525px;
     height: 457px;
   }
